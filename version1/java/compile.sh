@@ -1,1 +1,1 @@
-javac com/craftinginterpreters/lox/Lox.java
+javac com/craftinginterpreters/lox/*.java -d build/
