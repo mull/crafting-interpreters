@@ -1,0 +1,20 @@
+var a = 1;
+print "Global scope: ";
+print a;
+{
+  var a = 2;
+  print "Local scope: ";
+  print a;
+
+  {
+    var a = 3;
+    print "Nested local scope: ";
+    print a;
+  }
+
+  print "Local scope again: ";
+  print a;
+}
+
+print "Local scope: ";
+print a;
