@@ -1,0 +1,2 @@
+print "hi" or 42;
+print nil or "not nil";

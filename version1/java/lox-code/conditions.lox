@@ -1,0 +1,11 @@
+if (true) {
+  print "True is true";
+} else {
+  print "True is false";
+}
+
+if (false) {
+  print "False is true";
+} else {
+  print "False is false";
+}
