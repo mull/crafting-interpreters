@@ -1,0 +1,32 @@
+print clock();
+
+fun add_and_print(a, b) {
+  print a + b;
+}
+
+print "Add is: " + add_and_print;
+
+add_and_print(1, 6);
+
+fun add(a, b) {
+  return a + b;
+}
+
+print "add(1, 1) is: " + add(1, 1);
+
+
+print "Closures: expect 1 and 2 to be printed";
+
+fun make_counter() {
+  var i = 0;
+  fun count() {
+    i = i + 1;
+    return i;
+  }
+
+  return count;
+}
+
+var counter = make_counter();
+print counter();
+print counter();
