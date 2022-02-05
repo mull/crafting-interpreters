@@ -47,3 +47,34 @@ class Initializer {
 }
 
 Initializer();
+
+
+class Doughnut {
+  bork() {
+    print "Booo!";
+  }
+}
+class BostonCream < Doughnut {
+  bork() {
+    print "Boston bawrk";
+    super.bork();
+  }
+}
+
+BostonCream().bork();
+
+
+class One {
+  foo() {
+    super.foo();
+    print "One";
+  }
+}
+
+class Two < One {}
+class Three < Two {}
+
+Three().foo();
+
+
+super.foo();
