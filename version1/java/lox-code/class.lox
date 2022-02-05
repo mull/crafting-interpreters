@@ -1,0 +1,49 @@
+class DevonshireCream {
+  serveOn() {
+    return "Scones";
+  }
+}
+
+print DevonshireCream;
+
+class Bagel {}
+var bagel = Bagel();
+print bagel;
+
+bagel.cheese = "Cream cheese";
+print "bagel.cheese: " + bagel.cheese;
+
+fun doSomething() {
+  print "doSomething()";
+}
+
+bagel.doSomething = doSomething;
+bagel.doSomething();
+
+class Dog {
+  bark() {
+    print this.name + ": Woof woof!";
+  }
+
+  makeBark() {
+    return this.bark;
+  }
+}
+
+var dog = Dog();
+dog.name = "Kasper";
+dog.bark();
+
+
+var bark = dog.makeBark();
+bark();
+
+class Initializer {
+  init() {
+    print("This is the initializer!");
+    return;
+    print("Return without values is OK inside init()");
+  }
+}
+
+Initializer();
